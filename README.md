@@ -4,7 +4,7 @@ An AI-powered email reply generator built as a full-stack project with three int
 
 ## Overview
 
-This project lets you generate intelligent, context-aware email replies using Google's Gemini API. You can use it either through a standalone web interface or directly inside Gmail via a Chrome extension, both of which talk to the same Spring Boot backend.
+This project lets us generate intelligent, context-aware email replies using Google's Gemini API. We can use it either through a standalone web interface or directly inside Gmail via a Chrome extension, both of which talk to the same Spring Boot backend.
 
 ## Architecture
 
@@ -100,6 +100,7 @@ The web app will start on `http://localhost:5173` by default (or as configured b
 - Asynchronous, non-blocking backend calls to the Gemini API using WebClient and Project Reactor.
 - Seamless Gmail integration via a Manifest v3 Chrome extension with content scripts.
 - CORS-configured REST API supporting multiple client origins (web app and extension).
+- Support tone/style customization for generated replies (formal, casual, concise, etc.).
 
 ## What I Learned
 
@@ -111,10 +112,6 @@ The web app will start on `http://localhost:5173` by default (or as configured b
 ## Future Improvements
 
 - Add authentication/authorization for the API.
-- Support tone/style customization for generated replies (formal, casual, concise, etc.).
 - Add unit and integration tests across all three modules.
 - Deploy the backend and frontend to a cloud provider for public use.
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
